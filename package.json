@@ -1,0 +1,30 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Alltestruns": "npx cypress run",
+    "AlltestrunsHeaded": "npx cypress run --headed",
+    "AlltestrunsChrome": "npx run Alltestruns --browser chrome",
+    "recordDashboardTest": "npx cypress run --record --key 6eb45898-346c-4e3e-ad2a-cc80f83d7c26 --headed --browser chrome ",
+    "APITests": "npx cypress run --headed --spec \"cypress/integration/examples/Swapi_spec.js\"",
+    "EcomTests": "npx cypress run --headed --spec \"cypress/integration/examples/e-com-prodcut-buy.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^1.6.4",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@cypress/browserify-preprocessor": "latest"
+  }
+}
